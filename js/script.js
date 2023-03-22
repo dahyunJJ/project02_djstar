@@ -85,7 +85,7 @@ function displayItems(items) {
     <p>
       <img src="./img/${info2.weather}.png" alt="날씨아이콘" class="weather_img"/>
     </p>
-    <p>오늘의 날씨</p>
+    <p>내일의 날씨</p>
     <span>${info2.temp2m.max} &#8451;</span>
   </li>
   `;
