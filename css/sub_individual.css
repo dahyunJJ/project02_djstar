@@ -1,0 +1,434 @@
+/* 문제점
+- gnb 메뉴에서 단체 예약으로는 이동이 안됨
+- 400px 이하 캘린더 사이즈 조절 안됨..
+- 400px 이하 confirm_reserv (예약확인) 부분 정렬 이상
+- 페이지 맨 마지막에 있는 "예약신청"은 input 태그로 만들어야하나?
+- footer - dropup 넓이 조절
+*/
+
+@charset "utf-8";
+@font-face {
+  font-family: "DXSnU";
+  src: url(../fonts/DX별과그대M.ttf);
+}
+
+:root {
+  --mw: 1440px;
+  --gap1: 1rem;
+  --gap2: 2rem;
+  --bg_c: #10316b;
+  --point_c1: #f6bc51;
+  --point_c2: #555555;
+  --point_c3: #dc5050;
+  --sec_c: #f2f7ff;
+  --f_title: 24px;
+  --f_sub_title: 20px;
+  --f_body: 16px;
+  --f_info: 14px;
+}
+
+.hd {
+  border-bottom: 1px solid #f2f7ff50;
+  margin-bottom: 4rem;
+}
+/* 예약 카드 시작 */
+.sec1 {
+  background-color: var(--sec_c);
+  border-radius: 15px;
+  width: 320px;
+  padding: 1rem;
+  position: fixed;
+}
+.card_wrap {
+  width: calc(100% - 0.5rem);
+  margin: auto;
+}
+
+.card_img {
+  /* border: 1px solid red; */
+  border-bottom: 1px dotted var(--point_c2);
+}
+.card_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.card_title {
+  padding: var(--gap1) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_title span:nth-of-type(1) {
+  font-size: var(--f_sub_title);
+}
+.card_title span:nth-of-type(2) {
+  font-weight: bold;
+}
+
+.card_content {
+  /* border: 1px solid red; */
+  padding-top: var(--gap1);
+}
+.card_content p {
+  padding: 0.25rem 0;
+}
+
+/* accordion 시작(공통 부분) */
+.sec2 {
+  /* border: 1px solid red; */
+  width: calc(100% - 340px);
+  left: 340px;
+  position: relative;
+}
+
+.accordion > ul > li {
+  min-width: 600px;
+  max-height: 60px;
+  overflow: hidden;
+  border: 1px solid var(--sec_c);
+  border-radius: 15px;
+  margin-bottom: var(--gap2);
+}
+.accordion > ul > li.on {
+  max-height: 1200px;
+}
+
+.inform_title {
+  color: white;
+  font-size: var(--f_title);
+  font-family: "DXSnU";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--gap1);
+  cursor: pointer;
+}
+
+/* 예매 시 주의사항 시작 */
+.desc1 {
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inform {
+  background-color: var(--sec_c);
+  /* border: 1px solid red; */
+}
+.inform1 {
+  margin-right: 0.5rem;
+  border-radius: 15px 0 0 15px;
+}
+.inform2 {
+  border-radius: 0 15px 15px 0;
+}
+
+.inform_list {
+  position: relative;
+  padding: 0.75rem 0;
+}
+.inform_list::before {
+  content: "";
+  border-bottom: 1px dashed #55555550;
+  position: absolute;
+  width: 95%;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.inform_list span {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  color: var(--bg_c);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inform_list p {
+  font-size: var(--f_body);
+  padding: 0.25rem 1rem;
+}
+.inform2 .inform_list:last-of-type p:last-of-type {
+  padding-top: var(--gap2);
+}
+
+.special_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--gap1);
+}
+.special_link a {
+  color: var(--point_c2);
+  background-color: var(--point_c1);
+  border-radius: 20px;
+  padding: 0.5rem var(--gap1);
+  white-space: nowrap;
+}
+.special_link a:hover {
+  background-color: var(--bg_c);
+  color: white;
+}
+
+/* 날짜 및 시간선택 시작 */
+.desc2,
+.desc3 {
+  padding: var(--gap1);
+  border-radius: 15px;
+  background-color: var(--sec_c);
+}
+.desc2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time_wrap {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.time_wrap ul {
+  /* border: 1px solid red; */
+  display: block;
+  width: calc(100% / 2);
+  height: 80%;
+}
+.time_wrap ul li {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px dotted #55555550;
+}
+.time_wrap ul li span {
+  font-weight: bold;
+}
+
+.timetbl_left li a,
+.timetbl_right li a {
+  color: white;
+  background-color: var(--bg_c);
+  padding: 0.5rem;
+  white-space: nowrap;
+}
+.timetbl_right .sold_out a {
+  background-color: var(--point_c3);
+}
+
+/* 예약정보 시작 */
+.form {
+  padding-right: 1.5rem;
+}
+form {
+  padding: 0.5rem 0;
+}
+form div {
+  padding-bottom: 2rem;
+}
+label {
+  display: inline-block;
+  width: 80px;
+}
+#username,
+#phone,
+#email,
+#password {
+  display: inline-block;
+  padding: 0.25rem;
+  width: 320px;
+}
+#email::placeholder {
+  font-size: 12px;
+}
+
+.form_info {
+  font-size: var(--f_info);
+}
+.form_info > p {
+  padding-bottom: 0.5rem;
+}
+.confirm_reserv {
+  display: flex;
+}
+.confirm_reserv span {
+  white-space: nowrap;
+}
+.confirm_reserv p {
+  padding-left: 0.25rem;
+}
+
+/* 개인정보 수집 및 이용 동의 */
+.desc3 {
+  display: flex;
+  justify-content: space-between;
+}
+.form,
+.agree {
+  width: calc(100% / 2);
+}
+
+.agree div {
+  padding-bottom: 0.5rem;
+}
+.agree div span {
+  display: inline-block;
+  padding: 0.75rem 0;
+  color: var(--bg_c);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.agree div p {
+  font-size: var(--f_body);
+}
+.must {
+  color: var(--point_c3);
+}
+
+.checkbox {
+  /* border: 1px solid red; */
+  display: block;
+  width: 100%;
+  padding-top: 1.5rem;
+}
+
+/* 예약신청 버튼 */
+.btn_request {
+  font-family: "DXSnU";
+  font-size: var(--f_title);
+  padding: 0.75rem 4rem;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: 1px solid var(--sec_c);
+  border-radius: 30px;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 160px;
+}
+
+@media (max-width: 1100px) {
+  .sec1 {
+    position: static;
+    margin: auto;
+  }
+  .sec2 {
+    width: 100%;
+    left: 0;
+    margin-top: 4rem;
+  }
+
+  .special_link {
+    display: block;
+  }
+  .special_link a {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .accordion > ul > li {
+    min-width: 300px;
+  }
+  .desc {
+    display: block;
+  }
+  .inform,
+  .time_wrap,
+  .form,
+  .agree {
+    width: 100%;
+  }
+  .inform_title {
+    font-size: var(--f_sub_title);
+  }
+
+  .desc1,
+  .desc2,
+  .desc3 {
+    display: block;
+  }
+  .inform1 {
+    border-radius: 15px 15px 0 0;
+  }
+  .inform2 {
+    border-radius: 0 0 15px 15px;
+  }
+  .inform_list span {
+    font-size: 16px;
+  }
+  .inform_list p,
+  .special_link,
+  .agree div p,
+  .checkbox {
+    font-size: 14px;
+  }
+
+  .calendar {
+    max-width: 360px;
+    margin: auto;
+  }
+  .timetbl_left li span,
+  .timetbl_right li span {
+    font-size: 14px;
+  }
+  .timetbl_left li a,
+  .timetbl_right li a {
+    font-size: 12px;
+  }
+
+  form,
+  .form_info {
+    width: calc(100% - 5rem);
+    margin: auto;
+  }
+
+  label {
+    font-size: 14px;
+  }
+  #username,
+  #phone,
+  #email,
+  #password {
+    font-size: 12px;
+  }
+  .agree {
+    margin-top: 1rem;
+  }
+  .btn_request {
+    white-space: nowrap;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  #username,
+  #phone,
+  #email,
+  #password {
+    display: inline-block;
+    padding: 0.25rem 0;
+    width: 240px;
+    font-size: 12px;
+  }
+  form,
+  .form_info {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  .form form {
+    width: calc(100% - 2rem);
+    /* margin: auto; */
+  }
+}

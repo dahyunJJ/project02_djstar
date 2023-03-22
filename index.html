@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/my_reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <title>대전시민천문대</title>
+  </head>
+  <body>
+    <header class="hd mw">
+      <div class="wrap1">
+        <nav class="nav">
+          <div class="logo">
+            <a href="#">
+              <img src="./img/천문대_리뉴얼로고_white.png" alt="logo" />
+            </a>
+          </div>
+          <ul class="gnb">
+            <li>
+              <a href="#" class="gnb_title">천문대소개</a>
+              <ul class="sub">
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">현황및조직도</a></li>
+                <li><a href="#">시설안내</a></li>
+                <li><a href="#">홍보자료</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="gnb_title">이용안내</a>
+              <ul class="sub">
+                <li><a href="#">관람안내</a></li>
+                <li><a href="#">관측대상</a></li>
+                <li><a href="#">오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="gnb_title">예약안내</a>
+              <ul class="sub">
+                <li><a href="./html/sub_individual.html">관람예약(개인)</a></li>
+                <li><a href="./html/sub_group.html">관람예약(단체)</a></li>
+                <li><a href="#">특별프로그램</a></li>
+                <li><a href="#">봉사활동</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="gnb_title">천문대소식</a>
+              <ul class="sub">
+                <li><a href="#">행사사진</a></li>
+                <li><a href="#">천문정보</a></li>
+                <li><a href="#">아스트로갤러리</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="gnb_title">커뮤니티</a>
+              <ul class="sub">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">방문후기</a></li>
+                <li><a href="#">질문과답변</a></li>
+                <li><a href="#">자주하는질문</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="join">
+          <a href="#">로그인</a>
+          <a href="#">회원가입</a>
+        </div>
+        <div class="bars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- 모바일메뉴 영역 -->
+    <div class="M_nav">
+      <div class="M_gnb">
+        <!-- M_gnb 영역(js로 이동) -->
+      </div>
+      <i class="fa-solid fa-xmark close"></i>
+    </div>
+
+    <main>
+      <section class="sec1 mw">
+        <div class="wrap2">
+          <div class="main_banner">
+            <h1 class="main_title">
+              <span>도심속에서 만나는</span>
+              <span>별과 낭만의 하늘 놀이터</span>
+              <p>대전시민천문대</p>
+            </h1>
+            <img src="./img/main_visual01.jpg" alt="main_img" />
+          </div>
+          <ul class="book">
+            <li class="book_title">
+              <h2>대전시민천문대 예약</h2>
+            </li>
+            <li class="book_list book_list1">
+              <strong>개인</strong>
+              <span>예약하기</span>
+              <img src="./img/Arrow 1.svg" alt="longArrow" />
+              <a href="./html/sub_individual.html">클릭</a>
+            </li>
+            <li class="book_list book_list2">
+              <strong>단체</strong>
+              <span>예약하기</span>
+              <img src="./img/Arrow 1.svg" alt="longArrow" />
+              <a href="./html/sub_group.html">클릭</a>
+            </li>
+            <li class="book_list book_list3">
+              <strong>전시해설</strong>
+              <span>프로그램</span>
+              <img src="./img/Arrow 2.svg" alt="shortArrow" />
+              <a href="#">클릭</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info_wrap">
+          <ul class="info_bar">
+            <li class="info_list info_list1">
+              <strong>관람시간</strong>
+              <span>OPEN 14:00 / CLOSE 22:00 / 입장마감 21:50</span>
+            </li>
+            <li class="info_list info_list2">
+              <strong>휴관일</strong>
+              <span>매주 월요일 / 공휴일 다음날 / 명절 및 신정 연휴</span>
+            </li>
+            <li class="info_list info_list3">
+              <strong>이용요금</strong>
+              <span>무료</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="wrap3 mw">
+        <div class="sec2_sec3_con">
+          <section class="sec2">
+            <ul id="weather">
+              <!-- 날씨 정보 영역 -->
+              <li>
+                <p class="weather_img">이미지</p>
+                <p>오늘의 날씨</p>
+                <span>온도</span>
+              </li>
+              <li>
+                <p>이미지</p>
+                <p>내일의 날씨</p>
+                <span>온도</span>
+              </li>
+            </ul>
+            <div class="planet">
+              <img src="./img/month_planet.svg" alt="planet" />
+              <a href="#">
+                <span class="effect-7" data-hover="이달의 관측대상"
+                  >이달의 관측대상</span
+                >
+              </a>
+            </div>
+          </section>
+          <section class="sec3">
+            <h3>
+              <p class="sec3_title">특별프로그램</p>
+              <div>
+                <span></span>
+                <span></span>
+              </div>
+            </h3>
+            <ul class="sec3_con">
+              <li class="special_list">
+                <div>
+                  <span>매주 화요일</span>
+                  <span>별빛 속에</span>
+                  <span>시와 음악회</span>
+                </div>
+                <img src="./img/aurora-unsplash.jpg" alt="sec3_img" />
+                <a href="#">클릭</a>
+              </li>
+              <li class="special_list">
+                <div>
+                  <span>매주 토요일</span>
+                  <span>토요 별 음악회</span>
+                </div>
+                <img
+                  src="./img/milkyway-unsplash-size조정.jpg"
+                  alt="sec3_img"
+                />
+                <a href="#">클릭</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <section class="sec4">
+          <ul class="sec4_title">
+            <li class="on"><a href="#a">공지사항</a></li>
+            <li><a href="#a">방문후기</a></li>
+          </ul>
+          <div class="sec4_list_con">
+            <ul class="sec4_list sec4_list1 on">
+              <li>
+                <p>[천체관측회] 금성을 가린 달 (달-금성 근접)</p>
+                <span>2023-03-16</span>
+              </li>
+              <li>
+                <p>3월 1일 개관, 2일 휴관합니다.</p>
+                <span>2023-02-28</span>
+              </li>
+              <li>
+                <p>정월대보름 사진 컨테스트 결과</p>
+                <span>2023-02-21</span>
+              </li>
+              <li>
+                <p>[종료][천체관측회] 3월2일 금성과 목성이 만나는 날</p>
+                <span>2023-02-16</span>
+              </li>
+              <li>
+                <p>[종료]2023 겨울,봄방학 천문공작교실</p>
+                <span>2023-02-09</span>
+              </li>
+            </ul>
+            <ul class="sec4_list sec4_list2">
+              <li>
+                <p>
+                  정말 감사합니다. 별을 관람한 것보다 더 큰 감동을 받았습니다.
+                </p>
+                <span>2023-03-16</span>
+              </li>
+              <li>
+                <p>천체투영관 관람에 대해..</p>
+                <span>2023-02-28</span>
+              </li>
+              <li>
+                <p>Re: 천체투영관 관람에 대해..</p>
+                <span>2023-03-01</span>
+              </li>
+              <li>
+                <p>이주림 연구원(NASA JPL) 강연에 대한 소회</p>
+                <span>2023-02-16</span>
+              </li>
+              <li>
+                <p>천체 망원경에 스마트폰 들이대고 사진 찍으면 안되나요?</p>
+                <span>2023-02-09</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer mw">
+      <div class="wrap4">
+        <div class="footer_logo">
+          <a href="#">
+            <img src="./img/천문대_리뉴얼로고_white.png" alt="logo" />
+          </a>
+        </div>
+        <div class="address">
+          <p>(34128)대전광역시 유성구 과학로 213-48(신성동 7-13)</p>
+          <span>TEL. 042-863-8762, 8763</span>
+          <span>FAX. 042-863-8761</span>
+          <p>Copyright © 2017 Daejeon Observatory. All rights reserved</p>
+        </div>
+      </div>
+      <div class="link">
+        <div class="dropup-center dropup">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            기관사이트 바로가기
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item"
+                href="http://www.daejeon.go.kr/"
+                target="blank"
+                >대전광역시</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://www.kasi.re.kr/kor/index"
+                target="blank"
+                >한국천문연구원</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="http://www.science.go.kr/"
+                target="blank"
+                >국립중앙과학관</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="http://www.kasma.kr/"
+                target="blank"
+                >(사)한국천문우주과학관협회</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://dd.innopolis.or.kr/"
+                target="blank"
+                >대덕연구개발특구</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dropup-center dropup">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            지역별천문대 바로가기
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://www.yao.or.kr:451/"
+                target="blank"
+                >별마로천문대</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://ghast.or.kr/"
+                target="blank"
+                >김해천문대</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://www.gokseong.go.kr/star/"
+                target="blank"
+                >곡성섬진강천문대</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://www.ygtour.kr/HotPlace/P70000/html"
+                target="blank"
+                >국토정중앙천문대</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://www.kasi.re.kr/soao/index"
+                target="blank"
+                >소백산천문대</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dropup-center dropup">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            카페 바로가기
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://cafe.naver.com/daejeonobservatory"
+                target="blank"
+                >별이 가득한 하늘놀이터</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://logins.daum.net/accounts/loginform.do?status=-401&url=https%3A%2F%2Fcafe.daum.net%2F_c21_%2Fhome%3Fgrpid%3D1ULIj"
+                target="blank"
+                >대전시민천문대 어린이합창단</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
