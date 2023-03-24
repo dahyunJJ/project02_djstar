@@ -1,13 +1,12 @@
 // 모바일 메뉴
-const $open = document.querySelector(".bars");
-const $close = document.querySelector(".close");
+const $ham = document.querySelector(".bars");
 const $M_nav = document.querySelector(".M_nav");
 const $M_gnb = document.querySelector(".M_gnb");
 
-const GNB = `<ul class="gnb_inner">
+const GNB = `<ul class="M_gnb">
 <li>
-  <a href="#" class="gnb_title gnb_inner_title">천문대소개</a>
-  <ul class="mobile_sub">
+  <a href="#" class="gnb_title M_gnb_title">천문대소개</a>
+  <ul class="mobile_sub on">
     <li><a href="#">인사말</a></li>
     <li><a href="#">현황및조직도</a></li>
     <li><a href="#">시설안내</a></li>
@@ -15,7 +14,7 @@ const GNB = `<ul class="gnb_inner">
   </ul>
 </li>
 <li>
-  <a href="#" class="gnb_title gnb_inner_title">이용안내</a>
+  <a href="#" class="gnb_title M_gnb_title">이용안내</a>
   <ul class="mobile_sub">
     <li><a href="#">관람안내</a></li>
     <li><a href="#">관측대상</a></li>
@@ -23,7 +22,7 @@ const GNB = `<ul class="gnb_inner">
   </ul>
 </li>
 <li>
-  <a href="#" class="gnb_title gnb_inner_title">예약안내</a>
+  <a href="#" class="gnb_title M_gnb_title">예약안내</a>
   <ul class="mobile_sub">
     <li><a href="./html/sub_individual.html">관람예약(개인)</a></li>
     <li><a href="./html/sub_group.html">관람예약(단체)</a></li>
@@ -32,7 +31,7 @@ const GNB = `<ul class="gnb_inner">
   </ul>
 </li>
 <li>
-  <a href="#" class="gnb_title gnb_inner_title">천문대소식</a>
+  <a href="#" class="gnb_title M_gnb_title">천문대소식</a>
   <ul class="mobile_sub">
     <li><a href="#">행사사진</a></li>
     <li><a href="#">천문정보</a></li>
@@ -40,7 +39,7 @@ const GNB = `<ul class="gnb_inner">
   </ul>
 </li>
 <li>
-  <a href="#" class="gnb_title gnb_inner_title">커뮤니티</a>
+  <a href="#" class="gnb_title M_gnb_title">커뮤니티</a>
   <ul class="mobile_sub">
     <li><a href="#">공지사항</a></li>
     <li><a href="#">방문후기</a></li>
@@ -48,15 +47,13 @@ const GNB = `<ul class="gnb_inner">
     <li><a href="#">자주하는질문</a></li>
   </ul>
 </li>
-</ul>`;
+</ul>
+`;
 
-$M_gnb.innerHTML = GNB;
+$M_nav.innerHTML = GNB;
 
-$open.addEventListener("click", function () {
+$ham.addEventListener("click", function () {
   $M_nav.classList.toggle("on");
-});
-$close.addEventListener("click", function () {
-  $M_nav.classList.remove("on");
 });
 
 // 날씨 정보
@@ -85,7 +82,7 @@ function displayItems(items) {
     <p>
       <img src="./img/${info2.weather}.png" alt="날씨아이콘" class="weather_img"/>
     </p>
-    <p>오늘의 날씨</p>
+    <p>내일의 날씨</p>
     <span>${info2.temp2m.max} &#8451;</span>
   </li>
   `;
