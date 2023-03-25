@@ -157,13 +157,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--gap1);
+  padding: var(--gap1) 0;
 }
 .special_link a {
   color: var(--point_c2);
   background-color: var(--point_c1);
   border-radius: 20px;
   padding: 0.5rem var(--gap1);
+  margin-right: var(--gap1);
   white-space: nowrap;
 }
 .special_link a:hover {
@@ -332,14 +333,18 @@ label {
     display: block;
   }
   .special_link a {
+    /* border: 1px solid red; */
     display: inline-block;
-    margin-top: 1rem;
+    margin: 1rem 0 0 1rem;
   }
 }
 
 @media (max-width: 650px) {
   .accordion > ul > li {
     min-width: 300px;
+  }
+  .inform_title {
+    height: 70px;
   }
   .desc {
     display: block;
@@ -393,6 +398,10 @@ label {
     width: calc(100% - 5rem);
     margin: auto;
   }
+  .form_info > p,
+  .confirm_reserv {
+    font-size: 12px;
+  }
 
   label {
     font-size: 14px;
@@ -413,6 +422,12 @@ label {
 }
 
 @media (max-width: 400px) {
+  .inform_title {
+    font-size: 18px;
+  }
+  .inform_title_span {
+    font-size: 16px;
+  }
   #username,
   #phone,
   #email,
@@ -424,11 +439,19 @@ label {
   }
   form,
   .form_info {
-    /* border: 1px solid red; */
     width: 100%;
   }
   .form form {
+    /* border: 1px solid red; */
     width: calc(100% - 2rem);
-    /* margin: auto; */
+    margin: auto;
+  }
+  label {
+    font-size: 12px;
+    padding-bottom: 0.25rem;
+  }
+
+  .agree div span {
+    font-size: 16px;
   }
 }

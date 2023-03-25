@@ -1,6 +1,6 @@
 /* 문제점
 - gnb 메뉴에서 개인 예약으로는 이동이 안됨
-- 400px 이하 confirm_reserv (예약확인) 부분 정렬 이상
+- 650px 이하 confirm_reserv (예약확인) 부분 정렬 이상
 - footer - dropup 넓이 조절
 */
 
@@ -212,7 +212,7 @@
 .form1,
 .form2 {
   /* border: 1px solid red; */
-  width: calc(100% / 2 - 4rem);
+  width: calc(100% / 2 - 2rem);
   margin: 0 auto;
 }
 .form1 {
@@ -252,7 +252,7 @@ label {
 #phone,
 #email,
 #password,
-#groupnam {
+#groupname {
   display: inline-block;
   padding: 0.25rem;
   width: 300px;
@@ -263,6 +263,10 @@ label {
   width: 100px;
 }
 #email::placeholder {
+  font-size: 12px;
+}
+
+.age_average {
   font-size: 12px;
 }
 
@@ -383,6 +387,9 @@ label {
   .desc3 {
     display: block;
   }
+  form label {
+    font-size: 12px;
+  }
   .inform1 {
     border-radius: 15px 15px 0 0;
   }
@@ -417,6 +424,18 @@ label {
     width: calc(100% - 5rem);
     margin: auto;
   }
+  .form1 > form > div,
+  .form_info > p {
+    text-align: center;
+  }
+  .form_info > p,
+  .confirm_reserv {
+    font-size: 12px;
+  }
+  .confirm_reserv {
+    justify-content: center;
+  }
+
   .form1 {
     margin-bottom: var(--gap1);
   }
@@ -424,16 +443,36 @@ label {
     content: "";
     border: none;
   }
-
+  .form2 > form > div {
+    /* border: 1px solid red; */
+  }
   label {
-    font-size: 14px;
+    font-size: 12px;
   }
   #username,
   #phone,
   #email,
-  #password {
+  #password,
+  #groupname {
+    display: inline-block;
+    width: 200px;
     font-size: 12px;
   }
+  #age {
+    width: 80px;
+    height: 27px;
+  }
+  #email::placeholder,
+  .ref_note > span {
+    font-size: 12px;
+  }
+  #area_list,
+  #count_list,
+  #leader_list {
+    padding: 4px;
+    font-size: 12px;
+  }
+
   .agree {
     margin-top: 1rem;
   }
@@ -444,6 +483,13 @@ label {
 }
 
 @media (max-width: 400px) {
+  .inform_title {
+    font-size: 18px;
+  }
+  .special_link {
+    font-size: var(--f_info);
+  }
+
   #username,
   #phone,
   #email,
@@ -459,16 +505,25 @@ label {
   }
   .form form {
     width: calc(100% - 2rem);
-    /* margin: auto; */
   }
   .form1 div {
     /* border: 1px solid red; */
     width: calc(100% - 2rem);
     margin: auto;
   }
-  .confirm_reserv {
-    border: 1px solid red;
+  .form1 > form > div,
+  .form_info > p {
+    text-align: left;
+  }
+  .form_info .confirm_reserv {
+    /* border: 1px solid red; */
     width: 100%;
+  }
+  #groupname {
+    width: 160px;
+  }
+  #note {
+    width: 180px;
   }
 
   .desc4 div span {
