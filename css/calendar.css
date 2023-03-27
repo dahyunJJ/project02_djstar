@@ -21,9 +21,8 @@
 
 .calendar {
   position: relative;
-  /* max-width: 400px; */
-  min-width: 320px;
-  width: 440px;
+  min-width: 280px;
+  width: 420px;
   background: var(--calendar-bg-color);
   color: var(--calendar-font-color);
   /* margin: 20px auto; */
@@ -118,7 +117,7 @@
   font-weight: 500;
   font-size: 20px;
 }
-/* 강사수정 */
+
 .calendar .calendar-inner .calendar-body .number-item.on {
   outline: 2px solid tomato;
   border-radius: 4px;
@@ -172,4 +171,10 @@
 
 .dateNumber.on {
   background-color: #404040;
+}
+
+@media (max-width: 650px) {
+  .calendar {
+    width: calc(100% - 2rem);
+  }
 }
