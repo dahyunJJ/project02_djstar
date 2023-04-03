@@ -21,13 +21,13 @@
 
 ## 약식 기획서 요약
 <img width="60%" src="https://user-images.githubusercontent.com/117347407/227070245-3e2683f2-ff85-4d33-8884-9d8c156f2957.png">
-▶ https://docs.google.com/presentation/d/1PtCZ5NK-zUa_itFyQhS6pijREdrjelmpOlcfts9Cqdo/edit#
+▶ [약식기획서 링크](https://docs.google.com/presentation/d/1PtCZ5NK-zUa_itFyQhS6pijREdrjelmpOlcfts9Cqdo/edit#)
 
 ## 디자인 시안
 <img width="60%" src="https://user-images.githubusercontent.com/117347407/227070931-5a71efd8-0a8d-401a-985c-99521f0e0548.jpg">
 <img width="60%" src="https://user-images.githubusercontent.com/117347407/227127688-89ea3344-1ba1-4c63-912e-341fc075c03a.jpg">
 
-[피그마 디자인 시안 ](https://www.figma.com/file/s9LJSe80RA5KIqxmHf2wus/%EC%A0%95%EB%8B%A4%ED%98%84_%EB%8C%80%EC%A0%84%EC%8B%9C%EB%AF%BC%EC%B2%9C%EB%AC%B8%EB%8C%80?node-id=0%3A1&t=KtAhiAMWWowyKWbU-1)
+[피그마 링크](https://www.figma.com/file/s9LJSe80RA5KIqxmHf2wus/%EC%A0%95%EB%8B%A4%ED%98%84_%EB%8C%80%EC%A0%84%EC%8B%9C%EB%AF%BC%EC%B2%9C%EB%AC%B8%EB%8C%80?node-id=0%3A1&t=KtAhiAMWWowyKWbU-1)
 
 ## 데모
 ▶ https://dahyunjj.github.io/project02_djstar/
