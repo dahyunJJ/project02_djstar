@@ -21,7 +21,7 @@
 
 ## 약식 기획서 요약
 <img width="60%" src="https://user-images.githubusercontent.com/117347407/227070245-3e2683f2-ff85-4d33-8884-9d8c156f2957.png">
-▶ [약식기획서 링크](https://docs.google.com/presentation/d/1PtCZ5NK-zUa_itFyQhS6pijREdrjelmpOlcfts9Cqdo/edit#)
+[약식기획서 링크](https://docs.google.com/presentation/d/1PtCZ5NK-zUa_itFyQhS6pijREdrjelmpOlcfts9Cqdo/edit#)
 
 ## 디자인 시안
 <img width="60%" src="https://user-images.githubusercontent.com/117347407/227070931-5a71efd8-0a8d-401a-985c-99521f0e0548.jpg">
