@@ -1,3 +1,5 @@
+<img width="100%" src="https://github.com/dahyunJJ/project02_djstar/assets/117347407/08b1697c-4bc2-496e-86cb-1377d811b72f">
+
 # project02_djstar
 > 사용자 편의성에 기반하여 UI/UX를 개선한 반응형 웹사이트 구현 <br>
 > **기존 대전시민천문대 웹사이트** https://djstar.kr/
