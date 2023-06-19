@@ -6,20 +6,24 @@
 
 ## 프로젝트의 목적
 > 1. 기존 웹사이트를 분석하고 장점과 단점을 파악한 후, 벤치마킹 요소와 결합하여 리뉴얼 <br>
-> 2. 예약 프로세스 개선
+> 2. 복잡한 사이트맵 재구성 및 예약 프로세스 개선
+> 3. 날씨 API를 활용하여 사용자에게 정보 제공
 
 ## 프로젝트 내 역할
-> 분석 및 기획 / 발표자료(ppt) 작성 / Figma를 활용한 웹디자인 / 코딩
+> 분석 및 기획 : 50% <br>
+> 발표자료(ppt) 작성 : 70% <br>
+> 디자인 : 100% <br>
+> 코딩 : 100% <br>
 
 ## 사용툴 
-> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"/> 
-> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"/> 
-> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"/>
-> <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=Bootstrap&logoColor=white"/> 
-> <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white"/>
-> <img src="https://img.shields.io/badge/Adobe Illustrator-FF9A00?style=flat&logo=Adobe Illustrator&logoColor=white"/>
-> <img src="https://img.shields.io/badge/Adobe Photoshop-31A8FF?style=flat&logo=Adobe Photoshop&logoColor=white"/>
-> <img src="https://img.shields.io/badge/Font Awesome-528DD7?style=flat&logo=Font Awesome&logoColor=white"/>   
+### ✔ Environment
+> <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/> <img src="https://img.shields.io/badge/git-F05032?style=flat&logo=git&logoColor=white"/> <img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white"/>
+### ✔ Development
+> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"/>
+### ✔ Communication
+> <img src="https://img.shields.io/badge/slack-4A154B?style=flat&logo=slack&logoColor=white"/> <img src="https://img.shields.io/badge/notion-000000?style=flat&logo=notion&logoColor=white"/> 
+### ✔ Design
+> <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white"/> <img src="https://img.shields.io/badge/Adobe Illustrator-FF9A00?style=flat&logo=Adobe Illustrator&logoColor=white"/> <img src="https://img.shields.io/badge/Adobe Photoshop-31A8FF?style=flat&logo=Adobe Photoshop&logoColor=white"/> <img src="https://img.shields.io/badge/Font Awesome-528DD7?style=flat&logo=Font Awesome&logoColor=white"/> 
 
 ## 약식 기획서 요약
 #### [약식기획서 링크](https://docs.google.com/presentation/d/1PtCZ5NK-zUa_itFyQhS6pijREdrjelmpOlcfts9Cqdo/edit#)
